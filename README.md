@@ -29,3 +29,9 @@ RenderCV has more in depth guidelines at [https://docs.rendercv.com/user_guide/]
 From the project root, run:
 
 `rendercv render "Isaac_Edem_Adoboe_CV.yaml"`
+
+this defaults to outputing the resume files to `rendercv_output`.
+
+To specify the output folder, use:
+
+`rendercv render "Isaac_Edem_Adoboe_CV.yaml" -o ./path/to/output`
