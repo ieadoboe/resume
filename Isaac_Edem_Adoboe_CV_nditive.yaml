@@ -1,0 +1,276 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+cv:
+  name: Isaac Edem Adoboe
+  location: St. John's
+  email: ikeadoboe1@gmail.com
+  phone: +1-709-853-2427
+  # website: http://ieadoboe.github.io
+  social_networks:
+    - network: LinkedIn
+      username: isaacedemadoboe
+    - network: GitHub
+      username: ieadoboe
+  sections:
+    # welcome_to_RenderCV!:
+    #   - '[RenderCV](https://rendercv.com) is a Typst-based CV framework designed for academics and engineers, with Markdown syntax support.'
+    #   - Each section title is arbitrary. Each section contains a list of entries, and there are 7 different entry types to choose from.
+    education:
+      - institution: Memorial University of Newfoundland
+        area: Scientific Computing
+        degree: Master of Science
+        grade:
+        date:
+        start_date: 2025-09
+        end_date: present
+        location: St. John's, NL
+        summary: 'Continuing into thesis-based Scientific Computing masters following coursework-intensive Data Science masters.'
+        highlights:
+      - institution: Memorial University of Newfoundland
+        area: 'Data Science; GPA: 4.0; Fellow of the School of Gradrate Studies'
+        degree: Masters
+        grade: 
+        date:
+        start_date: 2024-09
+        end_date: 2025-08
+        location: St. John's, NL
+        summary:
+        highlights:
+          # - 'GPA: 4.0/4.0'
+          # - 'Awards: Fellow of the School of Gradrate Studies'
+      - institution: Kwame Nkrumah University of Science and Technology
+        area: 'Electrical Engineering; GPA: 3.55/4.0'
+        degree: 'Bachelor of Science'
+        grade:
+        date:
+        start_date: 2017-09
+        end_date: 2021-09
+        location: Kumasi, Ghana
+        summary:
+        highlights:
+          # - 'GPA: 3.55/4.0'
+
+    projects:
+      - name: 'Surrogate-Based Optimization for Molecular Configurations'
+        date: Spring 2025
+        start_date: 2025-01
+        end_date: 2025-08
+        location: 
+        summary: Developed machine learning surrogates to accelerate quantum chemistry calculations for protein-carbohydrate binding predictions.
+        highlights:
+          - "Implemented 4 ML models (Random Forest, XGBoost, MLP, SVR) on 740-sample dataset (16D feature space). Performed 80/20 cross-validation with RandomSearch for hyperparameter tuning; XGBoost achieved best prediction performance."
+          - "Deployed trained surrogates for global optimization using L-BFGS-B and Differential Evolution across 24 molecular pairs, reducing computational cost by 1000× compared to direct quantum chemistry calculations."
+      - name: 'Fine-Tuned CodeGen Model for Code Completion'
+        date: Summer 2025
+        start_date: 2021-01
+        end_date: 2024-01
+        location: 
+        summary: Fine-tuned transformer-based CodeGen-350M on CodeSearchNet Python corpus using HuggingFace Transformers.
+        highlights:
+          - "Trained on 2,700 samples (300 validation) with GPU acceleration. Implemented learning rate scheduling, warmup steps, and mixed-precision training for efficient convergence. Evaluated using BLEU and CodeBLEU metrics"
+      - name: 'Machine Learning-Based Fault Detection in Induction Motors'
+        date: 'Jan - Aug 2021'
+        start_date: 2021-01
+        end_date: 2021-08
+        location:
+        summary: Undergraduate thesis developing CNN architecture achieving 61.4% multi-class accuracy on motor fault classification. Processed motor current signals into time-frequency spectrograms with TensorFlow/Keras implementation.
+        highlights:
+          - "Built custom CNN (4 Conv2D layers, 64 filters, ReLU activation, MaxPooling 2×2, input shape 224×224×3) achieving 61.4% multi-class accuracy across 5 fault conditions (healthy, bearing, winding, single-phasing, motor-washer faults) using TensorFlow/Keras."
+          - "Converted raw motor current and vibration time-series into 2D scalograms via Continuous Wavelet Transform (CWT) in MATLAB. Extracted time-frequency representations from 1,500 sensor data points collected across 30 experimental runs of 10 seconds each."
+          - "Implemented rotation-based augmentation (90°, 180°, 270°) to address limited dataset problem. Preprocessed with ImageDataGenerator (rescaling, shear, zoom). Split data 90% training / 10% validation."
+
+    experience:
+      - company: Newmont Mining Corporation
+        position: Technology Portfolio Support Analyst
+        start_date: 2021-11
+        end_date: 2024-07
+        location: Akyem Mine, Ghana
+        summary: Promoted from End User Support Analyst (Aug 2022) to Technology Portfolio Support Analyst supporting mining operations technology infrastructure and data systems
+        highlights:
+          - '**Data Automation & Analytics:** Built Python-based reporting pipeline automating Lenel security system data extraction and transformation for finance/HR stakeholders (Power BI dashboards). Replaced manual processes with scheduled delivery reducing turnaround from days to hours.'
+          - '**Technical Operations Support:** Supported 900+ users on enterprise and mining software (MineSight, Deswik, LIMS); coordinated 8+ infrastructure deployments including LIMS modernization and workforce management systems.'
+
+      - company: Envision Digital Signage Network
+        position: Front-End Developer
+        start_date: 2021-01
+        end_date: 2021-12
+        location: Kumasi, Ghana
+        summary: Part-time web development role during final year of undergraduate studies, leading React-based application transformation
+        highlights:
+          - '**Web Applications:** Developed responsive React application for digital signage management (React Context API, custom hooks). Optimized performance through code splitting, reducing page load times by 40%. Contributed to 100% sales growth during tenure.'
+          
+      - company: Volta River Authority
+        position: Electrical Engineering Intern
+        start_date: 2020-05
+        end_date: 2020-08
+        location: Akosombo, Ghana
+        summary: Summer internship supporting high-voltage electrical distribution systems for national power infrastructure
+        highlights:
+          - '**High-Voltage Systems:** Assisted maintenance and troubleshooting of 161kV and 330kV high-voltage transmission lines. Processed load flow data and voltage profiles for distribution optimization studies.'
+    
+    skills:
+      - label: Software & Tools
+        details: Jupyter, Google Colab, Git/GitHub, MATLAB, Power BI, HuggingFace Transformers, Azure
+      - label: Programming Languages & Frameworks
+        details: Python (NumPy, pandas, scikit-learn, TensorFlow, Keras, PyTorch), R, SQL, Bash
+      - label: Machine Learning & Deep Learning
+        details: CNNs, supervised learning (classification/regression), data augmentation, Continuous Wavelet Transform (CWT), time-frequency analysis, sensor signal preprocessing, scalogram generation
+
+  sort_entries: none
+design:
+  theme: sb2nov
+  page:
+    size: a4
+    # size: us-letter
+    top_margin: 1.5cm
+    bottom_margin: 1.5cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_page_numbering: true
+    show_last_updated_date: false
+  colors:
+    text: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    last_updated_date_and_page_numbering: rgb(128, 128, 128)
+  text:
+    font_family: Calibri
+    font_size: 9pt
+    leading: 0.6em
+    alignment: left
+    date_and_location_column_alignment: right
+  links:
+    underline: true
+    use_external_link_icon: true
+  header:
+    name_font_family: Calibri
+    name_font_size: 14pt
+    name_bold: true
+    small_caps_for_name: false
+    photo_width: 3.5cm
+    vertical_space_between_name_and_connections: 0.4cm
+    vertical_space_between_connections_and_first_section: 0.4cm
+    horizontal_space_between_connections: 0.5cm
+    connections_font_family: Calibri
+    separator_between_connections: ''
+    use_icons_for_connections: true
+    use_urls_as_placeholders_for_connections: false
+    make_connections_links: true
+    alignment: center
+  section_titles:
+    type: with-full-line
+    font_family: Calibri
+    font_size: 1.4em
+    bold: false
+    small_caps: true
+    line_thickness: 0.5pt
+    vertical_space_above: 0.3cm
+    vertical_space_below: 0.3cm
+  entries:
+    date_and_location_width: 4.15cm
+    left_and_right_margin: 0.2cm
+    horizontal_space_between_columns: 0.1cm
+    vertical_space_between_entries: 1.2em
+    allow_page_break_in_sections: true
+    allow_page_break_in_entries: true
+    short_second_row: false
+    show_time_spans_in: []
+  highlights:
+    bullet: ◦
+    nested_bullet: '-'
+    top_margin: 0.25cm
+    left_margin: 0.15cm
+    vertical_space_between_highlights: 0.25cm
+    horizontal_space_between_bullet_and_highlight: 0.5em
+    summary_left_margin: 0cm
+  entry_types:
+    one_line_entry:
+      template: '**LABEL:** DETAILS'
+    education_entry:
+      main_column_first_row_template: |-
+        **INSTITUTION**
+        *DEGREE in AREA*
+      degree_column_template:
+      degree_column_width: 1cm
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: |-
+        *DATE*
+        *LOCATION*
+    normal_entry:
+      main_column_first_row_template: '**NAME**'
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: |-
+        *LOCATION*
+        *DATE*
+    experience_entry:
+      main_column_first_row_template: |-
+        **POSITION**
+        *COMPANY*
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: |-
+        *DATE*
+        *LOCATION*
+    publication_entry:
+      main_column_first_row_template: '**TITLE**'
+      main_column_second_row_template: |-
+        AUTHORS
+        URL (JOURNAL)
+      main_column_second_row_without_journal_template: |-
+        AUTHORS
+        URL
+      main_column_second_row_without_url_template: |-
+        AUTHORS
+        JOURNAL
+      date_and_location_column_template: DATE
+locale:
+  language: en
+  phone_number_format: national
+  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_template: Last updated in TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: Present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  date: '2025-10-28'
+  bold_keywords: []
+  sort_entries: none
+  render_command:
+    dont_generate_png: false 
+    dont_generate_html: true 
